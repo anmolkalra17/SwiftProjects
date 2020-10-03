@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GameVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="gameVC" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-iO-Wm0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="6H9-mt-qTE">
+                                        <rect key="frame" x="22" y="241" width="370" height="336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-3B-fCJ">
+                                                <rect key="frame" x="122.5" y="0.0" width="125" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="8jA-Z5-iTM"/>
+                                                    <constraint firstAttribute="height" constant="90" id="Tj5-1k-Wvg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock, Paper, Scissors?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFC-Mj-TE9">
+                                                <rect key="frame" x="13" y="147" width="344.5" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="Wc4-0w-X8v"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="zFy-Lj-IYk">
+                                                <rect key="frame" x="0.0" y="246" width="370" height="90"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-m2-hVx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                                        <state key="normal" title="👊"/>
+                                                        <connections>
+                                                            <action selector="rockBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H87-Cg-Egm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-EA-gTc">
+                                                        <rect key="frame" x="150" y="0.0" width="70" height="90"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                                        <state key="normal" title="✋"/>
+                                                        <connections>
+                                                            <action selector="paperBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9S8-Ye-fQl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETQ-pM-o1G">
+                                                        <rect key="frame" x="300" y="0.0" width="70" height="90"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                                        <state key="normal" title="✌️"/>
+                                                        <connections>
+                                                            <action selector="scissorsBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fo0-My-XUo"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="ahR-my-1sn"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="336" id="AfK-lB-P7z"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="6H9-mt-qTE" firstAttribute="centerX" secondItem="gS2-iO-Wm0" secondAttribute="centerX" id="iYj-r7-bSe"/>
+                                    <constraint firstItem="6H9-mt-qTE" firstAttribute="centerY" secondItem="gS2-iO-Wm0" secondAttribute="centerY" id="r7I-ay-OZy"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4M7-sm-hpa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="apn-mD-gU0">
+                                        <rect key="frame" x="130" y="155" width="154.5" height="502"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fge-Zg-M9t">
+                                                <rect key="frame" x="39.5" y="0.0" width="75" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="IGE-Ol-XBP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Lose!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyB-sK-4zY">
+                                                <rect key="frame" x="0.0" y="165" width="154.5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Ijd-cb-tRL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✌️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6y-1l-Ius">
+                                                <rect key="frame" x="39.5" y="290" width="75" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="FA1-Eg-xcy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NU-Wn-rA5">
+                                                <rect key="frame" x="17" y="455" width="120" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                                <state key="normal" title="Play Again">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playAgainBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbg-RZ-gH8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.72941176470000002" green="0.81960784310000001" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="apn-mD-gU0" firstAttribute="centerX" secondItem="4M7-sm-hpa" secondAttribute="centerX" id="De0-cV-5Ao"/>
+                                    <constraint firstItem="apn-mD-gU0" firstAttribute="top" secondItem="4M7-sm-hpa" secondAttribute="top" constant="155" id="S8Q-hW-WSZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gS2-iO-Wm0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Ni-jr-dVU"/>
+                            <constraint firstItem="4M7-sm-hpa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bb0-XV-p9k"/>
+                            <constraint firstItem="gS2-iO-Wm0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LjZ-Uf-Toi"/>
+                            <constraint firstItem="4M7-sm-hpa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MyH-Ei-lEQ"/>
+                            <constraint firstItem="gS2-iO-Wm0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SmB-n8-1Ru"/>
+                            <constraint firstItem="4M7-sm-hpa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uqq-G8-UOQ"/>
+                            <constraint firstItem="gS2-iO-Wm0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W7b-lN-wgf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4M7-sm-hpa" secondAttribute="bottom" id="pWE-Sk-Dd3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="computerPickLbl" destination="B6y-1l-Ius" id="R2s-Pe-pR6"/>
+                        <outlet property="gameBackground" destination="gS2-iO-Wm0" id="CYb-Sp-Oez"/>
+                        <outlet property="gameEndStack" destination="apn-mD-gU0" id="xNF-gP-Lky"/>
+                        <outlet property="gameFinishBackground" destination="4M7-sm-hpa" id="Kxf-CV-Nci"/>
+                        <outlet property="gameResultLbl" destination="hyB-sK-4zY" id="Pbo-2o-gUu"/>
+                        <outlet property="gameStartStack" destination="6H9-mt-qTE" id="blv-dk-foB"/>
+                        <outlet property="userPickLbl" destination="Fge-Zg-M9t" id="La0-8O-iXk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
