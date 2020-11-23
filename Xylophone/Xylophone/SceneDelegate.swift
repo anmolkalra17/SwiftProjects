@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  Xylophone
 //
-//  Created by Angela Yu on 28/06/2019.
-//  Copyright © 2019 The App Brewery. All rights reserved.
+//  Created by Anmol Kalra on 23/11/2020.
+//  Copyright © 2020 Anmol Kalra. All rights reserved.
 //
 
 import UIKit
