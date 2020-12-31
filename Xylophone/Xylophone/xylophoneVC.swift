@@ -10,7 +10,6 @@ import UIKit
 import AVFoundation
 
 class xylophoneVC: UIViewController {
-    
     var player: AVAudioPlayer!
     
     @IBAction func keyPressed(_ sender: UIButton) {
