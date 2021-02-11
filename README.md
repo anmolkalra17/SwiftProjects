@@ -5,7 +5,7 @@
 ### 4. CoderSwag (Design and Table Views)
 ### 5. DevSlopes (Concepts)
 ### 6. Game (Rock, Paper, Scissors)
-### 7.GoalPost App
+### 7. GoalPost App
 ### 8. Hello Color (Concept app)
 ### 9. Let's Buy App (Custom Classes)
 ### 10. Swoosh (Design and Segues)
