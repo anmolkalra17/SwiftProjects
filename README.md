@@ -1,6 +1,6 @@
 ![Swift](https://miro.medium.com/max/4000/1*eaeetv5KS3uZu4B9E892Ig.png)
 
-# SwiftProjects
+# Swift Projects
 ### 1. BMI Calculator App
 ### 2. ByteCoin App
 ### 3. Clima App
