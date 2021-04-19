@@ -6,6 +6,7 @@
 ### 3. Clima App
 ### 4. GoalPost App
 ### 5. Hacker News SwiftUI
-### 6. SwiftUI Lottie Animation
-### 7. Unit Converter App (Metric to Imperial and vice-versa)
-### 8. Xylophone App (AVFoundation Concept App)
+### 6. Space (ARKit)
+### 7. SwiftUI Lottie Animation
+### 8. Unit Converter App (Metric to Imperial and vice-versa)
+### 9. Xylophone App (AVFoundation Concept App)
